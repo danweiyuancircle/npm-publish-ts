@@ -1,0 +1,23 @@
+{
+  // 包含的源文件
+  "include": [
+    "src/**/*.ts"
+  ],
+  // 排除的文件夹
+  "exclude": [
+    "node_modules"
+  ],
+  "compilerOptions": {
+    // 编译目标版本
+    "target": "ES2020",
+    "module": "ESNext",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    // 生成类型声明文件 .d.ts
+    "declaration": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist",
+    "rootDir": "./src"
+  }
+}
