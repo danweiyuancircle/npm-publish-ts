@@ -1,8 +1,9 @@
 {
-  "name": "npm-circle-test",
+  "name": "npm-circle-test2",
   "version": "1.0.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "type": "module",
   "scripts": {
     "build": "tsc",
     "publish": "npm publish"
@@ -11,14 +12,16 @@
   "author": "liuyongjie",
   "license": "MIT",
   "description": "npm测试工程",
-  "devDependencies": {
-    "typescript": "^5.7.2"
-  },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
   "files": [
     "dist/**/*"
-  ]
+  ],
+  "dependencies": {
+    "mitt": "^3.0.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2"
+  }
 }
-

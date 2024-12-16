@@ -9,15 +9,17 @@
   ],
   "compilerOptions": {
     // 编译目标版本
-    "target": "ES2020",
-    "module": "ESNext",
+    "target": "ES6",
+    "module": "ES2015",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     // 生成类型声明文件 .d.ts
     "declaration": true,
     "forceConsistentCasingInFileNames": true,
+    "moduleDetection": "force",
     "outDir": "./dist",
-    "rootDir": "./src"
+    "rootDir": "./src",
+    "moduleResolution": "bundler"
   }
 }
